@@ -1,6 +1,6 @@
-import { StyleSheet, View, Pressable, Text, Image } from 'react-native';
+﻿import { StyleSheet, View, Pressable, Text, Image } from 'react-native';
 
-export default function Button({ label, onPress }) {
+export default function LoginHereButton({ label, onPress }) {
   return (
     <View style={styles.buttonContainer}>
       
@@ -16,6 +16,7 @@ const styles = StyleSheet.create({
     width: 300,
     height: 50,
     marginHorizontal: 20,
+    backgroundColor: '#1E31DA',
     alignItems: 'center',
     justifyContent: 'center',
     padding: 3,

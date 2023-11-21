@@ -1,11 +1,10 @@
-import { StyleSheet, View, Pressable, Text, Image } from 'react-native';
+﻿import { StyleSheet, View, Pressable, Text, Image } from 'react-native';
 
-export default function Button({ label, onPress }) {
+export default function ProfileDropDownButton({ label, onPress }) {
   return (
     <View style={styles.buttonContainer}>
-      
       <Pressable style={styles.button} onPress={onPress}>
-        <Text style={styles.buttonLabel}>{label}</Text>
+        <Image style={{width: 50, height: 50}} source={require('../assets/ProfileIcon.png')} ></Image>
       </Pressable>
     </View>
   );
@@ -13,15 +12,13 @@ export default function Button({ label, onPress }) {
 
 const styles = StyleSheet.create({
   buttonContainer: {
-    width: 300,
+    width: 50,
     height: 50,
     marginHorizontal: 20,
+    backgroundColor: '#1E31DA',
     alignItems: 'center',
     justifyContent: 'center',
     padding: 3,
-    borderColor: '#000',
-    borderRadius: 15,
-    borderWidth: 3
   },
   button: {
     borderRadius: 10,
